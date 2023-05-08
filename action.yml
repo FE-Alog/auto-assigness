@@ -1,0 +1,19 @@
+name: Auto Assigness
+description: Automatic assignment of participants.
+author: Akinocccc
+inputs:
+  input1:
+    issue_number: issue number
+    required: false
+    default: 1
+  input2:
+    body: issue comment
+    required: false
+    default: ''
+  input3:
+    Github Token: Github Token
+    required: true
+    default: ''
+runs:
+  using: 'javascript'
+  entrypoint: 'lib/index.js'
